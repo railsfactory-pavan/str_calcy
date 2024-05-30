@@ -1,0 +1,1 @@
+The Ruby string calculator program with RSpec TDD
