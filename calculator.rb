@@ -9,7 +9,7 @@ class Calculator
 	def add(given_str)
 		negative_numbers = given_str.scan(NEGATIVE_DIGITS_REGEXP).flatten
 
-    if !negative_numbers.empty?
+    unless negative_numbers.empty?
       raise InvalidInput.new("Negative numbers not allowed #{negative_numbers.join(',')}")
     end
 
